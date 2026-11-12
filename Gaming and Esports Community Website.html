@@ -1,1 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gaming & Esports Community</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #0b0b18;
+            color: white;
+        }
+        header {
+            background-color: #15152b;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 15px #6c36ff;
+        }
+        header h1 {
+            color: #a970ff;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #a970ff;
+        }
+        .hero {
+            text-align: center;
+            padding: 110px 20px;
+            background: linear-gradient( 135deg, #17102e, #25105b, #101027 );
+        }
+        .hero h2 {
+            font-size: 42px;
+            color: #b58aff;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            background-color: #873cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #b58aff;
+            transform: scale(1.08);
+        }
+        section {
+            padding: 55px 8%;
+        }
+        .heading {
+            text-align: center;
+            color: #b58aff;
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+        .game-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        .game-card {
+            background-color: #191932;
+            width: 250px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid #873cff;
+            transition: 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px #873cff;
+        }
+        .game-card h3 {
+            color: #b58aff;
+            margin-bottom: 15px;
+        }
+        .game-card p {
+            margin: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #191932;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #38385c;
+        }
+        th {
+            background-color: #7134db;
+            color: white;
+        }
+        tr:hover {
+            background-color: #29294b;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        .team {
+            background-color: #191932;
+            width: 260px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            border-bottom: 3px solid #873cff;
+        }
+        .team h3 {
+            color: #b58aff;
+            margin-bottom: 15px;
+        }
+        .player-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        .player {
+            background-color: #191932;
+            width: 220px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .player:hover {
+            box-shadow: 0 0 15px #873cff;
+        }
+        .player h3 {
+            color: #b58aff;
+            margin-bottom: 10px;
+        }
+        .news-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        .news {
+            background-color: #191932;
+            padding: 25px;
+            width: 280px;
+            border-radius: 10px;
+        }
+        .news h3 {
+            color: #b58aff;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #15152b;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        footer p {
+            margin: 10px;
+        }
+        @media(max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 35px 5%;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GAME ZONE</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#tournaments">Tournaments</a>
+            <a href="#teams">Teams</a>
+            <a href="#players">Players</a>
+            <a href="#leaderboard">Leaderboard</a>
+            <a href="#news">News</a>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <h2>WELCOME TO GAME ZONE</h2>
+        <p>
+            Enter the Gaming World.
+            Compete, Play and Become a Champion!
+        </p>
+        <a href="#tournaments" class="btn">
+            Explore Tournaments
+        </a>
+    </section>
+    <section id="games">
+        <h2 class="heading">Popular Games</h2>
+        <div class="game-container">
+            <div class="game-card">
+                <h3> BGMI</h3>
+                <p>Genre: Battle Royale</p>
+                <p>Mode: Multiplayer</p>
+                <p>Players: 100</p>
+            </div>
+            <div class="game-card">
+                <h3> Valorant</h3>
+                <p>Genre: Shooting</p>
+                <p>Mode: 5 vs 5</p>
+                <p>Players: 10</p>
+            </div>
+            <div class="game-card">
+                <h3> GTA V</h3>
+                <p>Genre: Action</p>
+                <p>Mode: Open World</p>
+                <p>Players: Multiplayer</p>
+            </div>
+            <div class="game-card">
+                <h3> FIFA</h3>
+                <p>Genre: Sports</p>
+                <p>Mode: Football</p>
+                <p>Players: 2</p>
+            </div>
+        </div>
+    </section>
+    <section id="tournaments">
+        <h2 class="heading">Esports Tournament Schedule</h2>
+        <table>
+            <tr>
+                <th>Game</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Venue</th>
+            </tr>
+            <tr>
+                <td>BGMI</td>
+                <td>20 Nov 2026</td>
+                <td>10:00 AM</td>
+                <td>Gaming Arena</td>
+            </tr>
+            <tr>
+                <td>Valorant</td>
+                <td>21 Nov 2026</td>
+                <td>11:00 AM</td>
+                <td>Computer Lab</td>
+            </tr>
+            <tr>
+                <td>GTA V</td>
+                <td>22 Nov 2026</td>
+                <td>02:00 PM</td>
+                <td>Gaming Hall</td>
+            </tr>
+        </table>
+    </section>
+    <section id="teams">
+        <h2 class="heading">Our Gaming Teams</h2>
+        <div class="team-container">
+           <div class="team">
+                <h3>TEAM DRAGONS</h3>
+                <p>Game: BGMI</p>
+                <p>Members: 4</p>
+                <p>Rank: 1</p>
+            </div>
+            <div class="team">
+                <h3>TEAM WARRIORS</h3>
+                <p>Game: Valorant</p>
+                <p>Members: 5</p>
+                <p>Rank: 2</p>
+            </div>
+            <div class="team">
+                <h3>TEAM LEGENDS</h3>
+                <p>Game: GTA V</p>
+                <p>Members: 4</p>
+                <p>Rank: 3</p>
+            </div>
+        </div>
+    </section>
+    <section id="players">
+        <h2 class="heading">Top Players</h2>
+        <div class="player-container">
+            <div class="player">
+                <h3>PLAYER 01</h3>
+                <p>Game: BGMI</p>
+                <p>Level: 50</p>
+            </div>
+            <div class="player">
+                <h3>PLAYER 02</h3>
+                <p>Game: Valorant</p>
+                <p>Level: 45</p>
+            </div>
+            <div class="player">
+                <h3>PLAYER 03</h3>
+                <p>Game: GTA V</p>
+                <p>Level: 40</p>
+            </div>
+        </div>
+    </section>
+    <section id="leaderboard">
+        <h2 class="heading"> Leaderboard</h2>
+        <table>
+          <tr>
+                <th>Rank</th>
+                <th>Player Name</th>
+                <th>Team</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Player 01</td>
+                <td>Dragons</td>
+                <td>950</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Player 02</td>
+                <td>Warriors</td>
+                <td>850</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Player 03</td>
+                <td>Legends</td>
+                <td>750</td>
+            </tr>
+        </table>
+    </section>
+    <section id="news">
+        <h2 class="heading">Latest Gaming News</h2>
+        <div class="news-container">
+            <div class="news">
+                <h3> New Gaming Tournament</h3>
+                <p>
+                    A new esports tournament is coming soon.
+                    Get ready to participate!
+                </p>
+            </div>
+            <div class="news">
+                <h3>Championship Update</h3>
+                <p>
+                    Top gaming teams are preparing
+                    for the upcoming championship.
+                </p>
+            </div>
+            <div class="news">
+                <h3> New Games</h3>
+                <p>
+                    Explore new games and improve
+                    your gaming skills.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>GAME ZONE</h2>
+        <p>Gaming & Esports Community Website</p>
+        <p>Designed by B.Tech CSE Students</p>
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
 
